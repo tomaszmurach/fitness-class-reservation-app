@@ -8,6 +8,20 @@ The application guides a user through selecting a fitness-class session, selecti
 
 The supporting domain model covers a wider fitness-club context than the workflow currently exposed through the GUI, including memberships, trainers, employees, facilities, and payments.
 
+## Application Preview
+
+### Session browser
+
+The main view allows the user to browse and filter scheduled fitness-class sessions, inspect their remaining capacity, and review existing reservations for the selected session.
+
+![Fitness class session browser](docs/screenshots/reservation-view.png)
+
+### Reservation review
+
+Before creating a reservation, the application presents the selected session and member details together with relevant booking information such as membership status, plan eligibility, capacity, and available places.
+
+![Reservation review](docs/screenshots/reservation-detail-view.png)
+
 ## Features
 
 - Browse fitness-class sessions and filter them by name, date, or status.
