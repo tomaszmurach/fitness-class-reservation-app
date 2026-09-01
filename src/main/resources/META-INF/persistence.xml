@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="
+                 https://jakarta.ee/xml/ns/persistence
+                 https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
+             version="3.1">
+
+    <persistence-unit name="mas-implementacja-persistence-unit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>mas.s31219.model.Osoba</class>
+        <class>mas.s31219.model.CzlonekKlubu</class>
+        <class>mas.s31219.model.Trener</class>
+        <class>mas.s31219.model.PracownikKlubu</class>
+        <class>mas.s31219.model.PlanCzlonkostwa</class>
+        <class>mas.s31219.model.Karnet</class>
+        <class>mas.s31219.model.KarnetAktywny</class>
+        <class>mas.s31219.model.KarnetZawieszony</class>
+        <class>mas.s31219.model.KarnetAnulowany</class>
+        <class>mas.s31219.model.Platnosc</class>
+        <class>mas.s31219.model.OddzialKlubu</class>
+        <class>mas.s31219.model.SalaTreningowa</class>
+        <class>mas.s31219.model.ZajeciaGrupowe</class>
+        <class>mas.s31219.model.SesjaZajec</class>
+        <class>mas.s31219.model.Rezerwacja</class>
+
+
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:./data/mas-implementacja-db"/>
+            <property name="jakarta.persistence.jdbc.user" value="sa"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.highlight_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
